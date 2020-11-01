@@ -31,6 +31,12 @@ public class DriverBankAccount{
         }else{
           System.out.println("Transfer Failed");
         }
+        
+        System.out.println(b1.getBalance());
+        System.out.println(b2.getBalance());
+        System.out.println(b1.transferTo(b2, 25, "abc123"));
+        System.out.println(b1.getBalance());
+        System.out.println(b2.getBalance());
 
         cashAmount *= 2;
       }
